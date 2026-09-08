@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/portfolio-letting-experts-design-system-2d984208-0480-48f7-9692-302b9f01fef3/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/portfolio-letting-experts-design-system-2d984208-0480-48f7-9692-302b9f01fef3/tokens/colors.css">
+<link rel="stylesheet" href="_ds/portfolio-letting-experts-design-system-2d984208-0480-48f7-9692-302b9f01fef3/tokens/typography.css">
+<link rel="stylesheet" href="_ds/portfolio-letting-experts-design-system-2d984208-0480-48f7-9692-302b9f01fef3/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/portfolio-letting-experts-design-system-2d984208-0480-48f7-9692-302b9f01fef3/styles.css">
+<script src="_ds/portfolio-letting-experts-design-system-2d984208-0480-48f7-9692-302b9f01fef3/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; background: #FFFFFF; }
+  a { color: var(--text-link); text-decoration: none; }
+  a:hover { color: var(--text-link-hover); }
+</style>
+</helmet>
+
+<div style="font: var(--text-body-md); color: var(--text-body); background: #FFFFFF; -webkit-font-smoothing: antialiased">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,0.92); backdrop-filter: saturate(1.4) blur(8px); border-bottom: 1px solid var(--border-subtle)">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px">
+        <img src="assets/logo-raw.png" alt="Portfolio Letting Experts" style="height: 38px; width: auto; display: block">
+        <span style="font: var(--text-label-lg); color: var(--text-heading); letter-spacing: -0.01em; display: none">Portfolio Letting Experts</span>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 28px">
+        <sc-if value="{{ showNavLinks }}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-wrap: wrap; gap: 28px" data-nav-links="">
+          <a href="#pains" style="font: var(--text-label-md); color: var(--text-body)">The problem</a>
+          <a href="#solutions" style="font: var(--text-label-md); color: var(--text-body)">How we help</a>
+          <a href="#proof" style="font: var(--text-label-md); color: var(--text-body)">Why us</a>
+        </div>
+        </sc-if>
+        <a href="#cta" style="text-decoration: none">
+          <x-import component-from-global-scope="PortfolioLettingExpertsDesignSystem_2d9842.Button" size="md" hint-size="150px,44px">Attend Live Workshop</x-import>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="position: relative; background: var(--ple-navy-900); overflow: hidden">
+    <sc-if value="{{ showHeroPhoto }}" hint-placeholder-val="{{ true }}">
+      <img src="assets/hero-1.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5">
+    </sc-if>
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(32,28,78,0.82) 0%, rgba(32,28,78,0.68) 45%, rgba(32,28,78,0.92) 100%)"></div>
+    <div style="position: relative; max-width: 900px; margin: 0 auto; padding: 108px 24px 116px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 26px">
+      
+      <h1 style="margin: 0; font: var(--text-display-xl); font-size: clamp(34px, 5.6vw, 60px); color: #FFFFFF; letter-spacing: -0.02em; text-wrap: balance">We help Bournemouth Landlords with 5–25 properties maximise profitability</h1>
+      <p style="margin: 0; max-width: 620px; font: var(--text-body-lg); color: rgba(255,255,255,0.88); text-wrap: pretty">The rules have changed. We restructure, plan and manage your portfolio so it earns you more.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; align-items: center">
+        <a href="#cta" style="text-decoration: none">
+          <x-import component-from-global-scope="PortfolioLettingExpertsDesignSystem_2d9842.Button" size="lg" hint-size="190px,52px">Attend Live Workshop</x-import>
+        </a>
+        
+      </div>
+      <p style="margin: 6px 0 0; font: var(--text-body-sm); color: rgba(255,255,255,0.66)">15 years in Bournemouth · 300+ Google reviews · 4.5★</p>
+    </div>
+  </section>
+
+  <section id="pains" style="padding: 96px 24px; background: #FFFFFF">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+        <span style="font: var(--text-eyebrow); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--ple-pink-600)">The problem</span>
+        <h2 style="margin: 0; font: var(--text-display-lg); font-size: clamp(28px, 3.8vw, 42px); color: var(--text-heading); letter-spacing: -0.02em">The game has changed</h2>
+        <p style="margin: 0; font: var(--text-body-lg); color: var(--text-muted); text-wrap: pretty">Portfolio landlords need to adapt to the new rules on the field.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+        <article style="display: flex; flex-direction: column; gap: 14px; padding: 30px; border: 1px solid var(--border-subtle); border-radius: 16px; background: var(--ple-gray-50)">
+          <span style="font: var(--text-label-sm); letter-spacing: 0.06em; color: var(--ple-pink-600)">1</span>
+          <h3 style="margin: 0; font: var(--text-display-sm); font-size: 22px; color: var(--text-heading)">Government policies destroying Profits</h3>
+          <p style="margin: 0; font: var(--text-body-md); color: var(--text-muted); text-wrap: pretty">Constant changes and fear of more to come mean Portfolio Landlords are making less money than ever despite rising rents.</p>
+          
+        </article><article style="display: flex; flex-direction: column; gap: 14px; padding: 30px; border: 1px solid var(--border-subtle); border-radius: 16px; background: var(--ple-gray-50)">
+          <span style="font: var(--text-label-sm); letter-spacing: 0.06em; color: var(--ple-pink-600)">2</span>
+          <h3 style="margin: 0; font: var(--text-display-sm); font-size: 22px; color: var(--text-heading)">A succession planning gap</h3>
+          <p style="margin: 0; font: var(--text-body-md); color: var(--text-muted); text-wrap: pretty">No plan for handing the portfolio to your children means a large slice of the inheritance you built goes to HMRC.</p>
+          
+        </article>
+        <article style="display: flex; flex-direction: column; gap: 14px; padding: 30px; border: 1px solid var(--border-subtle); border-radius: 16px; background: var(--ple-gray-50)">
+          <span style="font: var(--text-label-sm); letter-spacing: 0.06em; color: var(--ple-pink-600)">3</span>
+          <h3 style="margin: 0; font: var(--text-display-sm); font-size: 22px; color: var(--text-heading)">Compliance Fear</h3>
+          <p style="margin: 0; font: var(--text-body-md); color: var(--text-muted); text-wrap: pretty">Renter Rights Act has added more complexity to a mountain of rules</p>
+          
+        </article>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="solutions" style="padding: 96px 24px; background: var(--ple-gray-50); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle)">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+        <span style="font: var(--text-eyebrow); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--ple-teal-700)">How we help</span>
+        <h2 style="margin: 0; font: var(--text-display-lg); font-size: clamp(28px, 3.8vw, 42px); color: var(--text-heading); letter-spacing: -0.02em"></h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+        <article style="display: flex; flex-direction: column; gap: 18px; padding: 32px; background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: 16px; box-shadow: 0 2px 10px rgba(32,28,78,0.05)">
+          <div style="height: 4px; width: 44px; border-radius: 999px; background: var(--ple-pink-500)"></div>
+          <h3 style="margin: 0; font: var(--text-display-sm); color: var(--text-heading)">Portfolio Review</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+            <li style="font: var(--text-body-md); color: var(--text-muted)">We guide you on the highest impact changes you can make to increase profitability</li>
+            
+            
+          </ul>
+          
+        </article>
+        <article style="display: flex; flex-direction: column; gap: 18px; padding: 32px; background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: 16px; box-shadow: 0 2px 10px rgba(32,28,78,0.05)">
+          <div style="height: 4px; width: 44px; border-radius: 999px; background: var(--ple-teal-500)"></div>
+          <h3 style="margin: 0; font: var(--text-display-sm); color: var(--text-heading)">Legacy Planning</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+            <li style="font: var(--text-body-md); color: var(--text-muted)">We help you plan out how you will pass on your Portfolio to your children</li>
+            
+            
+          </ul>
+          
+        </article>
+        <article style="display: flex; flex-direction: column; gap: 18px; padding: 32px; background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: 16px; box-shadow: 0 2px 10px rgba(32,28,78,0.05)">
+          <div style="height: 4px; width: 44px; border-radius: 999px; background: var(--ple-navy-700)"></div>
+          <h3 style="margin: 0; font: var(--text-display-sm); color: var(--text-heading)">Peace of Mind</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+            <li style="font: var(--text-body-md); color: var(--text-muted)">Professional operation and management of your property portfolio tailored to your exact goals we have mapped out with you</li>
+            
+            
+          </ul>
+          
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof" style="padding: 96px 24px; background: #FFFFFF">
+    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <span style="font: var(--text-eyebrow); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--ple-pink-600)">Why Portfolio landlords choose us</span>
+        <h2 style="margin: 0; font: var(--text-display-lg); font-size: clamp(28px, 3.8vw, 42px); color: var(--text-heading); letter-spacing: -0.02em">Trusted by Bournemouth landlords</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+          <div style="padding: 24px; border-radius: 16px; background: var(--ple-navy-900); color: #FFFFFF">
+            <div style="font: var(--text-display-lg); font-size: 40px; color: var(--ple-teal-500)">15</div>
+            <div style="font: var(--text-label-md); margin-top: 6px">years helping BCP portfolio landlords</div>
+          </div>
+          <div style="padding: 24px; border-radius: 16px; background: var(--ple-pink-50); border: 1px solid var(--ple-pink-100)">
+            <div style="font: var(--text-display-lg); font-size: 40px; color: var(--ple-pink-600)">300+</div>
+            <div style="font: var(--text-label-md); margin-top: 6px; color: var(--text-heading)">Google reviews, rated 4.5★</div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <blockquote style="margin: 0; padding: 30px; border-radius: 16px; border: 1px solid var(--border-subtle); background: var(--ple-gray-50)">
+          <p style="margin: 0; font: var(--text-body-lg); color: var(--text-heading); text-wrap: pretty">We work with portfolio landlords to implement tax-efficient structures that set them up for sucess</p>
+        </blockquote>
+        <div style="padding: 30px; border-radius: 16px; border: 1.5px solid var(--ple-teal-500); background: var(--ple-teal-50); display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font: var(--text-display-sm); font-size: 20px; color: var(--text-heading)">Created by professional landlords</h3>
+          <p style="margin: 0; font: var(--text-body-md); color: var(--text-muted)">Created by our team which have built a Property Portfolio of 100+ units in Bournemouth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" style="padding: 24px">
+    
+  <div style="max-width: 1100px; margin: 0 auto; border-radius: 24px; background: {{ ctaBackground }}; padding: 72px 32px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px">
+      <span style="font: var(--text-eyebrow); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--ple-teal-500)">Live in-person workshop at our Bournemouth HQ</span>
+      <h2 style="margin: 0; max-width: none; white-space: nowrap; font: var(--text-display-lg); font-size: clamp(20px, 3.4vw, 42px); color: #FFFFFF; letter-spacing: -0.02em">Ready to set up your portfolio for sucess?</h2>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 8px">
+        <x-import component-from-global-scope="PortfolioLettingExpertsDesignSystem_2d9842.Button" size="lg" hint-size="280px,52px">Attend the live workshop</x-import>
+        
+      </div>
+      <p style="margin: 4px 0 0; font: var(--text-body-sm); color: rgba(255,255,255,0.6)">Limited to 8 landlords per workshop</p>
+    </div></section>
+
+  <footer style="margin-top: 24px; background: var(--ple-navy-800); color: rgba(255,255,255,0.8); padding: 56px 24px 32px">
+    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <img src="assets/logo-raw.png" alt="Portfolio Letting Experts" style="height: 40px; width: auto; align-self: flex-start; filter: brightness(0) invert(1)">
+        <p style="margin: 0; font: var(--text-body-sm); color: rgba(255,255,255,0.65); max-width: 260px">Residential letting and portfolio management for landlords across Bournemouth, Christchurch &amp; Poole.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h4 style="margin: 0 0 4px; font: var(--text-label-lg); color: #FFFFFF">Contact</h4>
+        <a href="tel:01202082023" style="font: var(--text-body-sm); color: rgba(255,255,255,0.8)">01202 082023</a>
+        <a href="mailto:help@portfoliolettingexperts.co.uk" style="font: var(--text-body-sm); color: rgba(255,255,255,0.8)">help@portfoliolettingexperts.co.uk</a>
+        <span style="font: var(--text-body-sm); color: rgba(255,255,255,0.65)">Oxford Point, 19 Oxford Road, Bournemouth, BH8 8GS</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h4 style="margin: 0 0 4px; font: var(--text-label-lg); color: #FFFFFF">Follow</h4>
+        
+        <a href="http://instagram.com/portfoliolettingexperts" style="font: var(--text-body-sm); color: rgba(255,255,255,0.8)">Instagram</a>
+        <a href="http://facebook.com/Portfoliolettingexperts" style="font: var(--text-body-sm); color: rgba(255,255,255,0.8)">Facebook</a>
+        
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h4 style="margin: 0 0 4px; font: var(--text-label-lg); color: #FFFFFF">Legal</h4>
+        <a href="#top" style="font: var(--text-body-sm); color: rgba(255,255,255,0.8)">Privacy policy</a>
+        <a href="#top" style="font: var(--text-body-sm); color: rgba(255,255,255,0.8)">Terms of service</a>
+        <a href="#top" style="font: var(--text-body-sm); color: rgba(255,255,255,0.8)">Complaints procedure</a>
+      </div>
+    </div>
+    <div style="max-width: 1100px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.14); font: var(--text-body-sm); color: rgba(255,255,255,0.5)">© 2026 Portfolio Letting Experts.</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showHeroPhoto&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;showNavLinks&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;},&quot;ctaTone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Navy&quot;,&quot;Pink&quot;,&quot;Teal&quot;],&quot;default&quot;:&quot;Navy&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;CTA&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const showHeroPhoto = this.props.showHeroPhoto ?? true;
+    const showNavLinks = this.props.showNavLinks ?? true;
+    const ctaTone = this.props.ctaTone ?? "Navy";
+    const tones = {
+      Navy: "var(--ple-navy-900)",
+      Pink: "var(--ple-pink-600)",
+      Teal: "var(--ple-teal-700)",
+    };
+    return {
+      showHeroPhoto,
+      showNavLinks,
+      ctaBackground: tones[ctaTone] || tones.Navy,
+    };
+  }
+}
+</script>
+</body>
+</html>
