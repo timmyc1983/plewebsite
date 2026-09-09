@@ -1,0 +1,9 @@
+/* ============================================================
+   FONT LOADING — Google Fonts substitution
+   No brand font files were provided by the source site (Squarespace
+   default template fonts aren't distributable). Manrope + Public Sans
+   are the nearest open substitutes. Flagged in readme.md — replace
+   this @import with real @font-face rules if brand fonts are supplied.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Public+Sans:wght@400;500;600;700&display=swap');
